@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPERNOVA-88-ltkef</title>
+        <!-- Primary Meta Tags -->
+<title>SUPERNOVA-88-ltkef</title>
+<meta name="title" content="SUPERNOVA-88-ltkef" />
+<meta name="description" content="MUSIC CLUB." />
+
+       <!-- Open Graph Meta Tags -->
+       <meta property="og:title" content="SUPERNOVA-88-ltkef">
+       <meta property="og:description" content="MUSIC CLUB.">
+       <meta property="og:image" content="https://scontent.ftun4-2.fna.fbcdn.net/v/t1.15752-9/419231203_906675794019692_4900493978365959495_n.png?_nc_cat=109&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=6eNugSDULBQAX_I5Oiz&_nc_ht=scontent.ftun4-2.fna&oh=03_AdR67TH-wBc0tDEweYm1sgOOfQOOQ_rS0MMuqO9X4AcTeQ&oe=65CA7418">
+       <meta property="og:url" content="https://supernova_88_ltkef/music.club.com">
+    <style>
+        body {
+            background-image: url('https://scontent.ftun4-2.fna.fbcdn.net/v/t1.15752-9/419231203_906675794019692_4900493978365959495_n.png?_nc_cat=109&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=6eNugSDULBQAX_I5Oiz&_nc_ht=scontent.ftun4-2.fna&oh=03_AdR67TH-wBc0tDEweYm1sgOOfQOOQ_rS0MMuqO9X4AcTeQ&oe=65CA7418');
+            background-size: cover;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+        #members-popup-btn {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: #12b8eb;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 1;
+        }
+        .popup-content {
+            max-height: 300px; /* Set a fixed height for the content */
+            overflow-y: scroll; /* Add scroll for overflow */
+        }
+        #header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        #recruitment-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #home {
+            padding: 50px 20px;
+        }
+        h1 {
+            font-size: 70px;
+            color: black;
+        }
+        #club-story {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #office-members, #alumna-members, #latest-creation, #social-media {
+            padding: 30px 20px;
+        }
+        #members-container, #alumna-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        #members-container div, #alumna-container div {
+            width: 20%;
+            margin-bottom: 50px;
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .popup-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgb(0, 0, 0);
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            color: rgb(255, 255, 255); /* Set the text color to red */
+        }
+        .close-btn {
+            background-color: #12b8eb;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #recruitment-page {
+            background-image: url('your_background_photo.jpg');
+            background-size: cover;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            padding-top: 50px;
+        }
+        #recruitment-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+        }
+        #recruitment-link {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            #search-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Adjust the transparency as needed */
+            color: white;
+            padding: 10px;
+            box-sizing: border-box;
+            z-index: 2; /* Ensure it's above other elements */
+        }
+        #search-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+#search-bar:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Change background color on hover */
+}
+
+#search-bar input {
+    width: 70%;
+    padding: 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+    color: #333; /* Set text color */
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+#search-bar input:focus {
+    background-color: white; /* Change background color on input focus */
+}
+
+#search-bar button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #12b8eb;
+    color: white;
+    font-size: 18px;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+#search-bar button:hover {
+    background-color: #0d98c8; /* Change background color on button hover */
+}
+   </style>
+</head>
+<body>
+    <div id="search-bar">
+        <input type="text" placeholder="Search...">
+        <button onclick="submitFeedback()">Submit Feedback</button>
+        <button onclick="viewFeedbacks()">View Feedbacks</button>
+    </div>
+    <div id="header">
+        <button id="recruitment-btn" onclick="window.location.href='https://forms.gle/EeBRgJdsbzFAh8wF8'">Join Us</button>
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h2>ARE YOU READY FOR OUR EVENT CONTEST</h2>
+            <p>Date: SOON</p>
+            <p>Location: SOON</p>
+            <p>SUPERNOVA-88-ltkef</p>
+            <button class="close-btn" onclick="closePopup()">YESSSSS</button>
+        </div>
+    </div>
+
+    <section id="home">
+        <h1>SUPERNOVA-88-ltkef</h1>
+        <div id="ABOUT OUR CLUB:">
+            <p id="ABOUT OUR CLUB">Supernova 88, the pulsating music club, ignited its cosmic journey on November 14, 2019, within the vibrant walls of Lycee Ahmed Amara El Kef. Guided by the celestial tunes of "Remember" (نتفكر), the anthems of unity in "We Are Here" (نحن هنا), and the fiery passion of "Fire in Me" (فيا نار), the club became a celestial sanctuary where beats resonate and memories are etched in the cosmic tapestry of sound. In the heart of Supernova 88, the club's ethos echoes the harmonies of "بين يديك" and "In Your Hands," creating a timeless musical experience.</p>
+        </div>
+    </section>
+
+    <section id="office-members">
+        <h2>Office Members</h2>
+        <div>
+            <img src="mouheb.png" alt="Office Member 1">
+            <p>CHEF MUSICIEN:mouheb khamessi</p>
+            <a href="https://www.instagram.com/mouheeb__/">CONTACT LINK</a>
+        </div>
+        <div>
+            <img src="don.png" alt="Office Member 1">
+            <p>CO LEADER:edem ayari</p>
+            <a href="https://www.instagram.com/adem_da_chery/">CONTACT LINK</a>
+        </div>
+        <div>
+            <img src="chahed.png" alt="Office Member 1">
+            <p>LEADER:chahed hidri</p>
+            <a href="https://www.instagram.com/hidri_chahd/">CONTACT LINK</a>
+        </div>
+        <div>
+            <img src="tlili.png" alt="Office Member 1">
+            <p>CHEF PROTOCOL:rayen tlili</p>
+            <a href="https://www.instagram.com/rayen_tlili_/">CONTACT LINK</a>
+        </div>
+        <div>
+            <img src="ne.png" alt="Office Member 1">
+            <p>CHEF MEDIA:louay ltaifi</p>
+            <a href="https://www.instagram.com/ltaifi_louay/">CONTACT LINK</a>
+        </div>
+        <img src="molk.png" alt="Office Member 1">
+        <p>CO CHEF MUSICIEN:molk bouzayen</p>
+        <a href="https://www.instagram.com/molkbouzayen/">CONTACT LINK</a>
+    </div>                                      
+            <!-- Repeat the block above for the other office members -->
+        </div>
+    </section>
+
+    <section id="alumna-members">
+        <h2>Our Alumna</h2>
+        <div id="alumna-container">
+            <!-- Repeat the following block for each alumna member -->
+            <div>
+                <img src="kasmi.png" alt="Alumna Member 1">
+                <p>MARIEM KASMI</p>
+            </div>
+            <div>
+                <img src="wissal.png" alt="Alumna Member 1">
+                <p>WISSAL SOLTANI</p>
+            </div>
+            <!-- Repeat the block above for the other alumna members -->
+        </div>
+    </section>
+
+    <section id="latest-creation">
+        <h2>Latest Creation</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cVM5nTO5D9E?si=RdzCeOYdt5DZw18U" frameborder="0" allowfullscreen></iframe>
+        <p>عندما تمتزج رائحة الفن  بأنامل الابداع 
+            عندما يخرج الفنان من جوهره فؤادا مفعما بالحب و الاحساس تتكون لوحة فنية بامتياز أبدع فريقنا العظيم supernova 88  في حياكة أحلى الكلمات و أعذبها 
+            فمن شرايين الكاف الحبيبة نلقي على حضرتكم حبا و إبداعا حرصنا على دمجه وزخرفته و نقشه بألوان الهيام لنخرج تحفة متناغمة تتدفق كنهر من التميز حيث يلتقي لحن ساحر لآسر بكلمات راقية رائعة تخلق تفردل و إبداعا يمضي بنا في يم الخيال و الخلق و الامتياز 
+            سلام عليكم و علينا سلام .سلام على من سيعشق الكلام و من سيدقق السمع و الاذان لابداعنا 
+            للوحتنا العظيمة الجليلة (بين يديك ) 
+            كل الحب و الامتنان و كل الشكر لكل من كان سببا في نجاح أغنيتنا و في كل من شجعنا لنكون نحن العظماء</p>
+    </section>
+
+    <section id="social-media">
+        <h2>Social Media</h2>
+        <!-- Add links to your club's social media profiles -->
+        <a href="https://www.facebook.com/88.supernovaK?paipv=0&eav=AfbWnCZ1l9rRnJ9Aq42yPFXbHv0KCVmoqLg1ILxCwCCADzArV1-HwN9NOkdDCGumNbE">FACEBOOK</a>
+        <a href="https://www.instagram.com/supernova_88_ltkef/">INSTAGRAM</a>
+        <a href="https://www.youtube.com/watch?v=cVM5nTO5D9E&ab_channel=Supernova_88">YOUTUBE</a>
+        <a href="https://www.tiktok.com/@supernova._88ltkef?_t=8fbf17H2EKM&_r=1&fbclid=IwAR39BjQi_a3EOPrKQFwz-NC2e8nqWRcR0VXvDgtQ9JuIEA70JEhng1H6b4M">TIKTOK</a>
+        <!-- Add other social media links as needed -->
+    </section>
+
+    <footer>
+        <p>Created by Louay Ltaifi</p>
+    </footer>
+
+    
+    <button id="members-popup-btn" onclick="openMembersPopup()">Club Members</button>
+
+    <div class="popup" id="members-popup">
+        <div class="popup-content">
+            <h2>Club Members</h2>
+            <p>Mouheb Khamessi</p>
+            <p>Edem Ayari</p>
+            <p>Chahed Hidri</p>
+            <p>Rayen Tlili</p>
+            <p>Louay Ltaifi</p>
+            <p>Abderrahmen Abidi</p>
+            <p>molk bouzayen</p>
+            <p>ines boumaiza</p>
+            <p>beher zammell</p>
+            <p>ghofrane warghy</p>
+            <p>fatma cherni</p>
+            <p>nabih</p>
+            <p>nouhe magri</p>
+            <p>hadil ben abdallah</p>
+            <p>nabih laabidi</p>
+            <p>edem ghzayel</p>
+            <p>skander channoufi</p>
+            <p>jesser tlili</p>
+            <p>emna souissi</p>
+            <p>emna slimi</p>
+            <p>zeineb samaali</p>
+            <p>feryel mkaddem</p>
+            <p>Roumayssa Boudali</p>
+            <p>Emna Ktari</p>
+            <!-- Add other club member names as needed -->
+            <button class="close-btn" onclick="closeMembersPopup()">Close</button>
+        </div>
+    </div>
+    <script>
+        // Function to handle submitting feedback
+    function submitFeedback() {
+        // Get the feedback from the input field
+        var feedbackText = document.querySelector('#search-bar input').value;
+
+        // Ensure the feedback is not empty
+        if (feedbackText.trim() === '') {
+            alert('Please enter feedback before submitting.');
+            return;
+        }
+
+        // Get existing feedbacks from local storage or initialize an empty array
+        var existingFeedbacks = JSON.parse(localStorage.getItem('feedbacks')) || [];
+
+        // Add the new feedback to the array
+        existingFeedbacks.push(feedbackText);
+
+        // Save the updated feedbacks back to local storage
+        localStorage.setItem('feedbacks', JSON.stringify(existingFeedbacks));
+
+        // After submitting, you might want to clear the input field
+        document.querySelector('#search-bar input').value = '';
+
+        alert('Feedback submitted successfully!');
+    }
+
+    // Function to handle viewing feedbacks
+    function viewFeedbacks() {
+        // Retrieve feedbacks from local storage
+        var existingFeedbacks = JSON.parse(localStorage.getItem('feedbacks')) || [];
+
+        // Display feedbacks in a popup (you can customize this based on your UI)
+        if (existingFeedbacks.length > 0) {
+            var feedbackMessage = 'Feedbacks:\n' + existingFeedbacks.join('\n');
+            alert(feedbackMessage);
+        } else {
+            alert('No feedbacks available.');
+        }
+    }
+
+       // Function to open the members popup
+       function openMembersPopup() {
+            document.getElementById('members-popup').style.display = 'block';
+        }
+        // Function to close the members popup
+        function closeMembersPopup() {
+            document.getElementById('members-popup').style.display = 'none';
+        }
+
+       // Function to close the popup
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+
+        // Display the popup when the page loads
+        window.onload = function() {
+            document.getElementById('popup').style.display = 'block';
+        };
+    </script>
+</body>
+</html>
